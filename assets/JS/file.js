@@ -9,7 +9,6 @@ constructor(title, author, isbn)
     this.isbn = isbn;
 }
 
-
 }
 
 class UI{
@@ -84,7 +83,6 @@ class Store{
 
 static getBooks()
 {
-
     // Returning book from LocalStorage
     let books;
 
@@ -112,7 +110,6 @@ static addBook(book)
 
 }
 
-
 static removeBook(ISBN)
 {
     const books = Store.getBooks();
@@ -127,8 +124,7 @@ static removeBook(ISBN)
     });
 
     localStorage.setItem('books', JSON.stringify(books));
-}
- 
+} 
 }
 
 UI.displayBooks();
@@ -175,5 +171,3 @@ UI.delete_books(e.target);
 });
 
 });
-
-
